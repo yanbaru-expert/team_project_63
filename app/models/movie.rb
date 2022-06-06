@@ -1,5 +1,5 @@
 class Movie < ApplicationRecord
-  with_options presense: true do
+  with_options presence: true do
     validates :genre
     validates :title
     validates :url
