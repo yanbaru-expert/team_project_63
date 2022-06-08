@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      text: テキスト
+    attributes:
+      text:
+        genre: 問題名
+        title: コメント
+        content: 内容
+  activerecord:
+    models:
+      movie: 動画
+    attributes:
+      text:
+        genre: ジャンル
+        title: タイトル
+        url: リンク
+
