@@ -1,18 +1,14 @@
 ja:
   activerecord:
     models:
-      text: テキスト
-    attributes:
-      text:
-        genre: 問題名
-        title: コメント
-        content: 内容
-  activerecord:
-    models:
-      movie: 動画
+      text: テキスト教材
+      movie: 動画教材
     attributes:
       text:
         genre: ジャンル
         title: タイトル
-        url: リンク
-
+        content: 内容
+      movie:
+        genre: ジャンル
+        title: タイトル
+        url: URL
