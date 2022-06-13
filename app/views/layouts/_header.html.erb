@@ -1,7 +1,35 @@
-<% if user_signed_in? %>
-  <%= link_to "アカウント編集", edit_user_registration_path %>
-  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？" } %>
-<% else %>
-  <%= link_to "新規登録", new_user_registration_path %>
-  <%= link_to "ログイン", new_user_session_path %>
-<% end %>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+  <span class="navbar-brand">やんばるエキスパート</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div class="navbar-nav">
+      <% if user_signed_in? %>
+        <%= link_to "アカウント編集", edit_user_registration_path , class: "nav-item nav-link active"%>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？" } , class: "nav-item nav-link active"%>
+      <% else %>
+        <%= link_to "新規登録", new_user_registration_path , class: "nav-item nav-link active"%>
+        <%= link_to "ログイン", new_user_session_path , class: "nav-item nav-link active"%>
+      <% end %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+          Ruby
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to "Ruby/Railsテキスト教材",texts_path(genre: "ruby"), class: "dropdown-item"%>
+          <%= link_to "Ruby/Railsテキスト教材",texts_path(genre: "php"), class: "dropdown-item"%>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+          PHP
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to "PHPテキスト教材",texts_path(genre: "php"), class: "dropdown-item"%>
+          <%= link_to "PHP動画教材",texts_path(genre: "php"), class: "dropdown-item"%>
+        </div>
+      </li>
+  </div>
+  </div>
+</nav>
