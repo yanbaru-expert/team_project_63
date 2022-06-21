@@ -41,3 +41,11 @@ body {
 .alert-alert {
   @extend .alert-danger;
 }
+
+.btn {
+  width: 100%;
+}
+
+.hr-margin {
+  margin: 50px 0;
+}
