@@ -3,7 +3,7 @@ ja:
     models:
       text: テキスト教材
       movie: 動画教材
-      admin_user: 管理者
+      admin_user: 管理者ユーザー
       comment: コメント
     attributes:
       text:
