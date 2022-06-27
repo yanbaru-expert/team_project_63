@@ -17,7 +17,7 @@ ActiveAdmin.register Text do
   index do
     selectable_column
     id_column
-    column :genre, :post, &:genre_i18n
+    column :genre, :text, &:genre_i18n
     column :title
     actions
   end
