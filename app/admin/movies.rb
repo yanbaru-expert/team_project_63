@@ -17,7 +17,7 @@ ActiveAdmin.register Movie do
   index do
     selectable_column
     id_column
-    column :genre
+    column :genre, :movie, &:genre_i18n
     column :title
     actions
   end
