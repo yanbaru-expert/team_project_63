@@ -1,0 +1,11 @@
+<div class="col-12 col-md-6 col-lg-4 text-item__container">
+  <div class="card text-item">
+    <div class="movie-image">
+      <%= embed_youtube( movie.url ) %>
+    </div>
+    <div class="card-body">
+      <a href="#" class="btn btn-secondary text-list__button">読破済みにする</a>
+      <p class="text-list__title">Lv.<%= movie_counter + 1 %> : <%= movie.title %></p>
+    </div>
+  </div>
+</div>
