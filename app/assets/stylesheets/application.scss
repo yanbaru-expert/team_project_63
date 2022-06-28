@@ -41,3 +41,7 @@ body {
 .alert-alert {
   @extend .alert-danger;
 }
+
+.hr-margin {
+  margin: 50px 0;
+}
