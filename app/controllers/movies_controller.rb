@@ -5,5 +5,10 @@ class MoviesController < ApplicationController
               else
                 Movie.where(genre: Movie::RAILS_GENRE_LIST)
               end
+    @title = if params[:genre] == "php"
+               "PHP 動画"
+             else
+               "Ruby/Rails 動画"
+             end
   end
 end

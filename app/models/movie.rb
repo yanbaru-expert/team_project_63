@@ -15,5 +15,5 @@ class Movie < ApplicationRecord
   }
 
   RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
-  PHP_GENRE_LIST = %w[basic git php].freeze
+  PHP_GENRE_LIST = %w[php].freeze
 end
