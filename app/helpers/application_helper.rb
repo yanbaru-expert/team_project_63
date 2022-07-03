@@ -8,4 +8,12 @@ module ApplicationHelper
       "mw-xl"
     end
   end
+
+  def movies_heading
+    if params[:genre] == "php"
+      "PHP 動画"
+    else
+      "Ruby/Rails 動画"
+    end
+  end
 end
