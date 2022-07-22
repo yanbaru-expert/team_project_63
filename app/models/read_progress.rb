@@ -1,0 +1,2 @@
+class ReadProgress < ApplicationRecord
+end
