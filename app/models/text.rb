@@ -16,4 +16,8 @@ class Text < ApplicationRecord
   }
 
   RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
+
+  def read_finished?(user)
+    read_progresses.exists?(user_id: user.id)
+  end
 end

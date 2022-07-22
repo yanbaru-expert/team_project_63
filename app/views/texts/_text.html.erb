@@ -3,7 +3,11 @@
     <div class="card text-item">
       <%= image_tag("default_image.jpeg")  %>
       <div class="card-body">
-        <a href="#" class="btn btn-secondary text-list__button">読破済みにする</a>
+      <% if text.read_finished?(current_user)%>
+        <%= link_to "読破済みを解除",text_read_progresses_path(text),class:"btn btn-primary text-list__button",method: :delete%>
+      <% else%>
+        <%= link_to "読破済みにする",text_read_progresses_path(text),class:"btn btn-secondary text-list__button",method: :post%>
+      <% end %>
         <p class="text-list__title"><%= text.title %></p>
         <p>【Basic】</p>
       </div>
