@@ -5,6 +5,7 @@ ja:
       movie: 動画教材
       admin_user: 管理者ユーザー
       comment: コメント
+      read_progress: 読破済み
     attributes:
       text:
         genre: ジャンル
@@ -23,3 +24,6 @@ ja:
       admin_user:
         email: Eメール
         created_at: 作成日時
+      read_progress:
+        user: ユーザー
+        text: テキスト教材
