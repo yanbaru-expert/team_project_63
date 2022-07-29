@@ -1,6 +1,6 @@
 class TextsController < ApplicationController
   def index
-    @texts = Text.genre(params)
+    @texts = Text.search_by_genre(params[:genre])
   end
 
   def show
