@@ -27,3 +27,5 @@ ja:
       read_progress:
         user: ユーザー
         text: テキスト教材
+      message:
+        duplication_read: 'は同じテキスト教材を2回以上読破済みにはできません'
