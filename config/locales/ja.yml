@@ -5,7 +5,6 @@ ja:
       movie: 動画教材
       admin_user: 管理者ユーザー
       comment: コメント
-      read_progress: 読破済み
     attributes:
       text:
         genre: ジャンル
@@ -27,5 +26,6 @@ ja:
       read_progress:
         user: ユーザー
         text: テキスト教材
-      message:
-        duplication_read: 'は同じテキスト教材を2回以上読破済みにはできません'
+  errors:
+    messages:
+      read_twice: 'は同じテキスト教材を2回以上読破済みにはできません'
