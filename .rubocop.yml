@@ -13,7 +13,6 @@ AllCops:
     - 'node_modules/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
-    - 'app/controllers/users/*'
 
 # 日本語のコメントを許可
 Style/AsciiComments:
@@ -54,6 +53,10 @@ Rails/Output:
 Rails/FilePath:
   Exclude:
     - 'config/environments/development.rb'
+
+Rails/I18nLocaleTexts:
+  Exclude:
+    - 'app/controllers/users/sessions_controller.rb'
 
 Rails/OutputSafety:
   Exclude:
