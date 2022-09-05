@@ -24,4 +24,8 @@ class Movie < ApplicationRecord
       Movie.where(genre: Movie::RAILS_GENRE_LIST)
     end
   end
+
+  def watch_finished?(user)
+    watch_progresses.exists?(user_id: user.id)
+  end
 end
