@@ -5,9 +5,9 @@
     </div>
     <div class="card-body">
       <% if movie.watch_finished?(current_user)%>
-        <%= link_to "視聴済みを解除",movie_watch_progresses_path(movie),class:"btn btn-primary text-list__button",method: :delete%>
+        <%= render "finished",movie: movie%>
       <% else%>
-        <%= link_to "視聴済みにする",movie_watch_progresses_path(movie),class:"btn btn-secondary text-list__button",method: :post%>
+        <%= render "unfinished",movie: movie%>
       <% end %>
       <p class="text-list__title">Lv.<%= movie_counter + 1 + @movies.offset_value %> : <%= movie.title %></p>
     </div>
