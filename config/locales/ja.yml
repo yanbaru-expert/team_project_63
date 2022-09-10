@@ -26,6 +26,9 @@ ja:
       read_progress:
         user: ユーザー
         text: テキスト教材
+      watch_progress:
+        user: ユーザー
+        movie: 動画教材
   errors:
     messages:
       read_twice: 'は同じテキスト教材を2回以上読破済みにはできません'
