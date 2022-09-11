@@ -1,0 +1,55 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+/* 全体 */
+
+@import 'bootstrap/scss/bootstrap';
+
+.base-container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* max-width */
+
+.mw-sm {
+  max-width: 576px;
+}
+
+.mw-md {
+  max-width: 768px;
+}
+
+.mw-lg {
+  max-width: 992px;
+}
+
+.mw-xl {
+  max-width: 1200px;
+}
+
+body {
+  padding-top: 69px;
+}
+
+.alert-notice {
+  @extend .alert-success;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hr-margin {
+  margin: 50px 0;
+}
+
+.pagination {
+  justify-content: center;
+}
